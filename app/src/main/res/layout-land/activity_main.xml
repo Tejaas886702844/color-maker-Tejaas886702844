@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <!--This seekbar is used to change the intensity of green color-->
+    <SeekBar
+        android:id="@+id/sb_2"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:progress="0"
+        android:max="255"
+        android:progressBackgroundTint="@color/blue"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+    <!--This switch is used to control blue color-->
+    <!--for the color of switch we have imported from trackblue.xml file in drawable folder-->
+    <Switch
+        android:id="@+id/sw_Three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+    <!--This textview is to display colors-->
+    <TextView
+        android:id="@+id/tv_ColorBox"
+        android:layout_width="157dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--This textview is used for border around the colorbox-->
+    <!--for border we are using textview_border.xml file in drawable folder-->
+    <TextView
+        android:id="@+id/tv_Border"
+        android:layout_width="157dp"
+        android:layout_height="281dp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_ColorBox"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--This switch is used to control red color-->
+    <!--for the color of switch we have imported from trackred.xml file in drawable folder-->
+    <Switch
+        android:id="@+id/sw_One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+    <!--This switch is used to control green color-->
+    <!--for the color of switch we have imported from trackgreen.xml file in drawable folder-->
+    <Switch
+        android:id="@+id/sw_Two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackgreen"
+        android:max="255"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+    <!--This seekbar is used to change the intensity of red color-->
+    <SeekBar
+        android:id="@+id/sb_0"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:progress="0"
+        android:max="255"
+        android:progressBackgroundTint="@color/red"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+    <!--This seekbar is used to change the intensity of green color-->
+    <SeekBar
+        android:id="@+id/sb_1"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:clickable="false"
+        android:progress="0"
+        android:max="255"
+        android:progressBackgroundTint="@color/green"
+        android:progressTint="@color/green"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+    <!--This textview is used to display value for red color-->
+    <EditText
+        android:id="@+id/tv_0"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/textview_value_border"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+    <!--This textview is used to display value for green color-->
+    <EditText
+        android:id="@+id/tv_1"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/textview_value_border"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+    <!--This textview is used to display value for blue color-->
+    <EditText
+        android:id="@+id/tv_2"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/textview_value_border"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+    <!--This button is for reset-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="111dp"
+        android:layout_height="58dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

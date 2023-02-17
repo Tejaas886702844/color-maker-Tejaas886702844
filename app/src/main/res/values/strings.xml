@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Color_Maker</string>
+    <string name="text">Please enter the value in the range 0.0 - 1.0</string>
+</resources>
